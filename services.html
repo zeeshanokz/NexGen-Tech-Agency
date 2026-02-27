@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | NexGen Tech Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-[#fbfcfe] text-slate-800 antialiased overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-5 px-4 md:px-10">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2">
+                <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center text-white text-xl">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <span class="text-2xl font-bold tracking-tight text-slate-900 font-['Outfit']">NexGen</span>
+            </a>
+            <ul class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+                <li><a href="index.html" class="hover:text-indigo-600 transition">Home</a></li>
+                <li><a href="about.html" class="hover:text-indigo-600 transition">About</a></li>
+                <li><a href="services.html" class="nav-link-active hover:text-indigo-600 transition">Services</a></li>
+                <li><a href="projects.html" class="hover:text-indigo-600 transition">Projects</a></li>
+                <li><a href="blog.html" class="hover:text-indigo-600 transition">Blog</a></li>
+                <li><a href="contact.html"
+                        class="px-6 py-2.5 btn-gradient text-white rounded-full font-semibold shadow-lg shadow-indigo-200">Contact
+                        Us</a></li>
+            </ul>
+            <button id="menu-btn" class="md:hidden text-slate-800 focus:outline-none">
+                <i id="menu-icon-open" class="fas fa-bars text-2xl"></i>
+                <i id="menu-icon-close" class="fas fa-times text-2xl hidden"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="pt-40 pb-20 bg-slate-950 relative overflow-hidden text-center">
+            <div class="max-w-7xl mx-auto px-4 md:px-10 relative z-10">
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 font-['Outfit']">Services we offer</h1>
+                <p class="text-indigo-200 text-xl max-w-2xl mx-auto">Future-proof solutions designed to help your
+                    business evolve and scale.</p>
+            </div>
+        </section>
+
+        <!-- Detailed Services -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 md:px-10 space-y-32">
+                <!-- Web Dev -->
+                <div class="grid md:grid-cols-2 gap-16 items-center reveal">
+                    <div>
+                        <div
+                            class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600 text-2xl mb-8">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h2 class="text-4xl font-bold text-slate-900 mb-6 font-['Outfit']">Web Development</h2>
+                        <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                            We build fast, secure, and responsive web applications using technologies like React,
+                            Next.js, and Node.js. Our focus is on creating scalable architectures that grow with your
+                            business.
+                        </p>
+                        <ul class="grid grid-cols-2 gap-4 text-slate-700 font-medium">
+                            <li><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Custom E-commerce</li>
+                            <li><i class="fas fa-check-circle text-indigo-500 mr-2"></i> SaaS Platforms</li>
+                            <li><i class="fas fa-check-circle text-indigo-500 mr-2"></i> API Integrations</li>
+                            <li><i class="fas fa-check-circle text-indigo-500 mr-2"></i> CMS Development</li>
+                        </ul>
+                    </div>
+                    <div class="relative group">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop"
+                            alt="Web Development"
+                            class="rounded-[2.5rem] shadow-2xl transition duration-500 group-hover:scale-105">
+                    </div>
+                </div>
+
+                <!-- UI/UX -->
+                <div class="grid md:grid-cols-2 gap-16 items-center reveal flex-row-reverse">
+                    <div class="md:order-2">
+                        <div
+                            class="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 text-2xl mb-8">
+                            <i class="fas fa-bezier-curve"></i>
+                        </div>
+                        <h2 class="text-4xl font-bold text-slate-900 mb-6 font-['Outfit']">UI/UX Design</h2>
+                        <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                            Our design philosophy is centered around the user. We create intuitive, engaging, and
+                            beautiful interfaces that ensure your products are a joy to use.
+                        </p>
+                        <ul class="grid grid-cols-2 gap-4 text-slate-700 font-medium">
+                            <li><i class="fas fa-check-circle text-purple-500 mr-2"></i> User Research</li>
+                            <li><i class="fas fa-check-circle text-purple-500 mr-2"></i> Wireframing</li>
+                            <li><i class="fas fa-check-circle text-purple-500 mr-2"></i> Visual Design</li>
+                            <li><i class="fas fa-check-circle text-purple-500 mr-2"></i> Prototyping</li>
+                        </ul>
+                    </div>
+                    <div class="relative group md:order-1">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?q=80&w=2070&auto=format&fit=crop"
+                            alt="UIUX Design"
+                            class="rounded-[2.5rem] shadow-2xl transition duration-500 group-hover:scale-105">
+                    </div>
+                </div>
+
+                <!-- AI -->
+                <div class="grid md:grid-cols-2 gap-16 items-center reveal">
+                    <div>
+                        <div
+                            class="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mb-8">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h2 class="text-4xl font-bold text-slate-900 mb-6 font-['Outfit']">AI & Automation</h2>
+                        <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                            Leverage the power of AI to automate workflows, glean insights from data, and build smarter
+                            products. We integrate modern LLMs and predictive models into your business logic.
+                        </p>
+                        <ul class="grid grid-cols-2 gap-4 text-slate-700 font-medium">
+                            <li><i class="fas fa-check-circle text-amber-500 mr-2"></i> Chatbot Dev</li>
+                            <li><i class="fas fa-check-circle text-amber-500 mr-2"></i> Data Analytics</li>
+                            <li><i class="fas fa-check-circle text-amber-500 mr-2"></i> Machine Learning</li>
+                            <li><i class="fas fa-check-circle text-amber-500 mr-2"></i> Workflow Auto</li>
+                        </ul>
+                    </div>
+                    <div class="relative group">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop"
+                            alt="AI Solutions"
+                            class="rounded-[2.5rem] shadow-2xl transition duration-500 group-hover:scale-105">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 md:px-10 text-center mb-16 reveal">
+                <span class="text-indigo-600 font-bold uppercase tracking-widest text-sm">Working with us</span>
+                <h2 class="text-4xl font-bold text-slate-900 mt-4 font-['Outfit']">How We Deliver Results</h2>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 md:px-10 grid md:grid-cols-4 gap-8">
+                <div class="reveal relative text-center">
+                    <div
+                        class="w-20 h-20 bg-indigo-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 relative z-10">
+                        1</div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-4 font-['Outfit']">Discovery</h4>
+                    <p class="text-slate-500 text-sm">We deep dive into your goals and target audience.</p>
+                </div>
+                <div class="reveal relative text-center">
+                    <div
+                        class="w-20 h-20 bg-indigo-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 relative z-10">
+                        2</div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-4 font-['Outfit']">Planning</h4>
+                    <p class="text-slate-500 text-sm">Strategic roadmap and architecture design.</p>
+                </div>
+                <div class="reveal relative text-center">
+                    <div
+                        class="w-20 h-20 bg-indigo-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 relative z-10">
+                        3</div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-4 font-['Outfit']">Execution</h4>
+                    <p class="text-slate-500 text-sm">Agile development and meticulous design.</p>
+                </div>
+                <div class="reveal relative text-center">
+                    <div
+                        class="w-20 h-20 bg-indigo-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6 relative z-10">
+                        4</div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-4 font-['Outfit']">Launch</h4>
+                    <p class="text-slate-500 text-sm">Final QC, deployment, and ongoing support.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer copied from index.html -->
+    <footer class="bg-slate-950 pt-20 pb-10 text-slate-400">
+        <!-- ... footer content ... -->
+        <div class="max-w-7xl mx-auto px-4 md:px-10 grid md:grid-cols-4 gap-12 mb-16">
+            <div>
+                <a href="index.html" class="flex items-center space-x-2 mb-8">
+                    <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center text-white text-xl">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight text-white font-['Outfit']">NexGen</span>
+                </a>
+                <p class="leading-relaxed">Building digital excellence through innovation and creative solutions since
+                    2018.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-8 font-['Outfit']">Quick Links</h4>
+                <ul class="space-y-4">
+                    <li><a href="index.html" class="hover:text-indigo-400 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-indigo-400 transition">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-indigo-400 transition">Our Services</a></li>
+                    <li><a href="projects.html" class="hover:text-indigo-400 transition">Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-indigo-400 transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-8 font-['Outfit']">Services</h4>
+                <ul class="space-y-4">
+                    <li><a href="#" class="hover:text-indigo-400 transition">Web Development</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition">UI/UX Design</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition">AI Solutions</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition">Cloud Computing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-8 font-['Outfit']">Newsletter</h4>
+                <form class="flex mt-8">
+                    <input type="email"
+                        class="w-full px-5 py-3 bg-white/5 border border-white/10 rounded-l-xl focus:outline-none"
+                        placeholder="Email...">
+                    <button type="submit" class="px-5 py-3 btn-gradient text-white rounded-r-xl"><i
+                            class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 md:px-10 pt-10 border-t border-white/5 text-center text-sm">
+            <p>&copy; 2026 NexGen Tech Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

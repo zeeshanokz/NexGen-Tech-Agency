@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen Tech Agency | Innovative Software Solutions</title>
+    <meta name="description"
+        content="NexGen is a premium Tech Agency specializing in Web Dev, UI/UX, AI, and Cloud Solutions.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-[#fbfcfe] text-slate-800 antialiased overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 py-5 px-4 md:px-10">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-2">
+                <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center text-white text-xl">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <span class="text-2xl font-bold tracking-tight text-slate-900 font-['Outfit']">NexGen</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+                <li><a href="index.html" class="nav-link-active hover:text-indigo-600 transition">Home</a></li>
+                <li><a href="about.html" class="hover:text-indigo-600 transition">About</a></li>
+                <li><a href="services.html" class="hover:text-indigo-600 transition">Services</a></li>
+                <li><a href="projects.html" class="hover:text-indigo-600 transition">Projects</a></li>
+                <li><a href="blog.html" class="hover:text-indigo-600 transition">Blog</a></li>
+                <li><a href="contact.html"
+                        class="px-6 py-2.5 btn-gradient text-white rounded-full font-semibold shadow-lg shadow-indigo-200">Contact
+                        Us</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-800 focus:outline-none" aria-label="Toggle Menu"
+                aria-expanded="false">
+                <i id="menu-icon-open" class="fas fa-bars text-2xl"></i>
+                <i id="menu-icon-close" class="fas fa-times text-2xl hidden"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full glass-dark py-8 px-6 flex-col space-y-6 md:hidden shadow-2xl">
+            <a href="index.html" class="text-white text-lg font-medium border-b border-white/10 pb-2">Home</a>
+            <a href="about.html" class="text-white/80 text-lg font-medium border-b border-white/10 pb-2">About</a>
+            <a href="services.html" class="text-white/80 text-lg font-medium border-b border-white/10 pb-2">Services</a>
+            <a href="projects.html" class="text-white/80 text-lg font-medium border-b border-white/10 pb-2">Projects</a>
+            <a href="blog.html" class="text-white/80 text-lg font-medium border-b border-white/10 pb-2">Blog</a>
+            <a href="contact.html" class="px-6 py-3 btn-gradient text-white rounded-xl text-center font-bold">Contact
+                Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative min-h-screen pt-32 pb-20 flex items-center overflow-hidden">
+            <!-- Abstract background circles -->
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 -left-24 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
+
+            <div class="max-w-7xl mx-auto px-4 md:px-10 grid md:grid-cols-2 gap-12 items-center relative z-10">
+                <div class="animate-fadeInUp">
+                    <span
+                        class="inline-block py-1 px-4 rounded-full bg-indigo-50 text-indigo-600 font-bold text-sm mb-6 uppercase tracking-wider border border-indigo-100 italic">Innovating
+                        the Future</span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 leading-[1.1] mb-8 font-['Outfit']">
+                        Building <span class="text-gradient">Digital Excellence</span> for Your Business
+                    </h1>
+                    <p class="text-lg text-slate-600 mb-10 leading-relaxed max-w-lg">
+                        We transform complex ideas into powerful digital realities. From custom software to stunning
+                        UI/UX, we help modern brands scale with high-end tech solutions.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+                        <a href="projects.html"
+                            class="px-8 py-4 btn-gradient text-white rounded-2xl font-bold text-lg text-center shadow-xl shadow-indigo-200">View
+                            Projects</a>
+                        <a href="#about"
+                            class="px-8 py-4 bg-white border-2 border-slate-100 text-slate-800 rounded-2xl font-bold text-lg text-center hover:bg-slate-50 transition shadow-sm">Learn
+                            More</a>
+                    </div>
+
+                    <!-- Trust badges -->
+                    <div class="mt-12 flex items-center space-x-6 opacity-70">
+                        <span class="text-sm font-semibold text-slate-500 uppercase tracking-widest">Trusted By</span>
+                        <div class="flex space-x-4">
+                            <i class="fab fa-google text-xl"></i>
+                            <i class="fab fa-amazon text-xl"></i>
+                            <i class="fab fa-microsoft text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative animate-float md:block hidden">
+                    <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
+                            alt="Tech Workplace" class="w-full h-auto">
+                    </div>
+                    <!-- Decorative glass elements -->
+                    <div
+                        class="absolute -bottom-10 -left-10 w-48 h-48 glass rounded-3xl z-20 p-6 shadow-xl backdrop-blur-xl reveal">
+                        <div class="text-3xl font-bold text-indigo-600 mb-2">99%</div>
+                        <div class="text-sm text-slate-600 font-medium">Project Success Rate</div>
+                    </div>
+                    <div
+                        class="absolute -top-10 -right-10 w-48 h-48 glass rounded-3xl z-0 p-6 shadow-xl backdrop-blur-xl">
+                        <div class="text-3xl font-bold text-purple-600 mb-2">24/7</div>
+                        <div class="text-sm text-slate-600 font-medium">Expert Support</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section (Stats) -->
+        <section id="about" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 md:px-10">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div class="reveal">
+                        <div class="relative rounded-[40px] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
+                                alt="Team Meeting" class="w-full">
+                            <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/60 to-transparent"></div>
+                            <div class="absolute bottom-8 left-8 text-white">
+                                <p class="text-xl font-medium italic">"Designing the future, one byte at a time."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal">
+                        <span class="text-indigo-600 font-bold uppercase tracking-widest text-sm">Who We Are</span>
+                        <h2 class="text-4xl font-bold text-slate-900 mt-4 mb-6 font-['Outfit']">Driving Innovation
+                            Through Creative Solutions</h2>
+                        <p class="text-slate-600 mb-8 leading-relaxed">
+                            Founded in 2018, NexGen has been at the forefront of digital transformation. We are a team
+                            of passionate developers, designers, and strategists dedicated to delivering high-impact
+                            software that solves real-world problems.
+                        </p>
+
+                        <div id="stats-section" class="grid grid-cols-2 gap-8 mb-10">
+                            <div class="stat-item p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                                <div class="text-3xl font-bold text-indigo-600 stat-count font-['Outfit']"
+                                    data-target="10">0+</div>
+                                <p class="text-sm font-semibold text-slate-500 uppercase mt-2">Years Experience</p>
+                            </div>
+                            <div class="stat-item p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                                <div class="text-3xl font-bold text-indigo-600 stat-count font-['Outfit']"
+                                    data-target="250">0+</div>
+                                <p class="text-sm font-semibold text-slate-500 uppercase mt-2">Projects Done</p>
+                            </div>
+                            <div class="stat-item p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                                <div class="text-3xl font-bold text-indigo-600 stat-count font-['Outfit']"
+                                    data-target="150">0+</div>
+                                <p class="text-sm font-semibold text-slate-500 uppercase mt-2">Happy Clients</p>
+                            </div>
+                            <div class="stat-item p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                                <div class="text-3xl font-bold text-indigo-600 stat-count font-['Outfit']"
+                                    data-target="50">0+</div>
+                                <p class="text-sm font-semibold text-slate-500 uppercase mt-2">Expert Team</p>
+                            </div>
+                        </div>
+
+                        <a href="about.html"
+                            class="inline-flex items-center text-indigo-600 font-bold hover:translate-x-2 transition p-1">
+                            Discover More About Us <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 md:px-10 text-center mb-16 reveal">
+                <span class="text-indigo-600 font-bold uppercase tracking-widest text-sm">Our Expertise</span>
+                <h2 class="text-4xl font-bold text-slate-900 mt-4 font-['Outfit']">Solutions We Provide</h2>
+                <div class="w-20 h-1.5 bg-indigo-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 md:px-10 grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="reveal bg-white p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
+                    <div
+                        class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600 text-2xl mb-8 group-hover:bg-indigo-600 group-hover:text-white transition duration-300">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 font-['Outfit']">Web Development</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">High-performance, scalable web applications built
+                        with the latest modern frameworks.</p>
+                    <a href="services.html"
+                        class="text-indigo-600 font-bold text-sm uppercase tracking-wider group-hover:ml-2 transition-all">Learn
+                        More <i class="fas fa-chevron-right ml-1 text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="reveal bg-white p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
+                    <div
+                        class="w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 text-2xl mb-8 group-hover:bg-purple-600 group-hover:text-white transition duration-300">
+                        <i class="fas fa-bezier-curve"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 font-['Outfit']">UI/UX Design</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">User-centric designs that are visually stunning and
+                        provide seamless experiences.</p>
+                    <a href="services.html"
+                        class="text-purple-600 font-bold text-sm uppercase tracking-wider group-hover:ml-2 transition-all">Learn
+                        More <i class="fas fa-chevron-right ml-1 text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="reveal bg-white p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
+                    <div
+                        class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-8 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 font-['Outfit']">App Development</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">Native and cross-platform mobile apps that engage
+                        users and drive growth.</p>
+                    <a href="services.html"
+                        class="text-blue-600 font-bold text-sm uppercase tracking-wider group-hover:ml-2 transition-all">Learn
+                        More <i class="fas fa-chevron-right ml-1 text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div
+                    class="reveal bg-white p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
+                    <div
+                        class="w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600 text-2xl mb-8 group-hover:bg-emerald-600 group-hover:text-white transition duration-300">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 font-['Outfit']">SEO & Marketing</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">Data-driven strategies to boost your online
+                        visibility and conversion rates.</p>
+                    <a href="services.html"
+                        class="text-emerald-600 font-bold text-sm uppercase tracking-wider group-hover:ml-2 transition-all">Learn
+                        More <i class="fas fa-chevron-right ml-1 text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div
+                    class="reveal bg-white p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
+                    <div
+                        class="w-16 h-16 bg-rose-50 rounded-2xl flex items-center justify-center text-rose-600 text-2xl mb-8 group-hover:bg-rose-600 group-hover:text-white transition duration-300">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 font-['Outfit']">Cloud Solutions</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">Reliable and secure cloud infrastructure to power
+                        your digital operations.</p>
+                    <a href="services.html"
+                        class="text-rose-600 font-bold text-sm uppercase tracking-wider group-hover:ml-2 transition-all">Learn
+                        More <i class="fas fa-chevron-right ml-1 text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div
+                    class="reveal bg-white p-10 rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300 group">
+                    <div
+                        class="w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mb-8 group-hover:bg-amber-600 group-hover:text-white transition duration-300">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-4 font-['Outfit']">AI Solutions</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">Implementing intelligent automation and predictive
+                        analytics for smart growth.</p>
+                    <a href="services.html"
+                        class="text-amber-600 font-bold text-sm uppercase tracking-wider group-hover:ml-2 transition-all">Learn
+                        More <i class="fas fa-chevron-right ml-1 text-[10px]"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 md:px-10 text-center mb-16 reveal">
+                <span class="text-indigo-600 font-bold uppercase tracking-widest text-sm">Our Portfolio</span>
+                <h2 class="text-4xl font-bold text-slate-900 mt-4 font-['Outfit']">Featured Projects</h2>
+                <div class="w-20 h-1.5 bg-indigo-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 md:px-10 grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Project 1 -->
+                <div
+                    class="reveal group project-card bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm transition hover:shadow-2xl">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=2089&auto=format&fit=crop"
+                            alt="E-commerce Platform" class="w-full h-full object-cover">
+                        <div
+                            class="absolute top-4 right-4 py-1 px-3 bg-white/90 backdrop-blur rounded-full text-xs font-bold text-indigo-600 uppercase shadow-sm">
+                            Retail</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3 font-['Outfit']">E-commerce Platform</h3>
+                        <p class="text-slate-600 text-sm mb-6 line-clamp-2">A high-conversion multi-vendor marketplace
+                            with seamless payment integration.</p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span
+                                class="px-3 py-1 bg-white text-[10px] font-bold text-slate-500 rounded-lg border border-slate-200">React</span>
+                            <span
+                                class="px-3 py-1 bg-white text-[10px] font-bold text-slate-500 rounded-lg border border-slate-200">Node.js</span>
+                            <span
+                                class="px-3 py-1 bg-white text-[10px] font-bold text-slate-500 rounded-lg border border-slate-200">Stripe</span>
+                        </div>
+                        <a href="projects.html" class="flex items-center justify-between font-bold text-indigo-600">
+                            View Details <i class="fas fa-arrow-right-long group-hover:translate-x-2 transition"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div
+                    class="reveal group project-card bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm transition hover:shadow-2xl">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=2000&auto=format&fit=crop"
+                            alt="Fintech Dashboard" class="w-full h-full object-cover">
+                        <div
+                            class="absolute top-4 right-4 py-1 px-3 bg-white/90 backdrop-blur rounded-full text-xs font-bold text-purple-600 uppercase shadow-sm">
+                            Finance</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3 font-['Outfit']">Fintech Dashboard</h3>
+                        <p class="text-slate-600 text-sm mb-6 line-clamp-2">Real-time financial tracking and investment
+                            analytics for modern traders.</p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span
+                                class="px-3 py-1 bg-white text-[10px] font-bold text-slate-500 rounded-lg border border-slate-200">Vue.js</span>
+                            <span
+                                class="px-3 py-1 bg-white text-[10px] font-bold text-slate-500 rounded-lg border border-slate-200">Python</span>
+                            <span
+                                class="px-3 py-1 bg-white text-[10px] font-bold text-slate-500 rounded-lg border border-slate-200">AWS</span>
+                        </div>
+                        <a href="projects.html" class="flex items-center justify-between font-bold text-indigo-600">
+                            View Details <i class="fas fa-arrow-right-long group-hover:translate-x-2 transition"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div
+                    class="reveal group project-card bg-slate-50 rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm transition hover:shadow-2xl">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?q=80&w=2070&auto=format&fit=crop"
+                            alt="SaaS PM Tool" class="w-full h-full object-cover">
+                        <div
+                            class="absolute top-4 right-4 py-1 px-3 bg-white/90 backdrop-blur rounded-full text-xs font-bold text-blue-600 uppercase shadow-sm">
+                            SaaS</div>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-3 font-['Outfit']">Project Management</h3>
+                        <p class="text-slate-600 text-sm mb-6 line-clamp-2">Collaborative tool designed for remote teams
+                            to manage tasks and timelines.</p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span
+                                class="px-3 py-1 bg-white text-[10px] font-bold text-slate-500 rounded-lg border border-slate-200">Next.js</span>
+                            <span
+                                class="px-3 py-1 bg-white text-[10px] font-bold text-slate-500 rounded-lg border border-slate-200">Supabase</span>
+                            <span
+                                class="px-3 py-1 bg-white text-[10px] font-bold text-slate-500 rounded-lg border border-slate-200">Tailwind</span>
+                        </div>
+                        <a href="projects.html" class="flex items-center justify-between font-bold text-indigo-600">
+                            View Details <i class="fas fa-arrow-right-long group-hover:translate-x-2 transition"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center reveal">
+                <a href="projects.html"
+                    class="px-10 py-4 btn-gradient text-white rounded-2xl font-bold shadow-xl shadow-indigo-200">Explore
+                    All Projects</a>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 px-4">
+            <div class="max-w-7xl mx-auto bg-slate-900 rounded-[3rem] p-12 md:p-20 relative overflow-hidden reveal">
+                <!-- Abstract blobs -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-600/20 blur-3xl rounded-full"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-purple-600/20 blur-3xl rounded-full"></div>
+
+                <div class="relative z-10 text-center max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-8 font-['Outfit']">Ready to Start Your Next
+                        Digital Journey?</h2>
+                    <p class="text-slate-300 text-lg mb-12">Join hundreds of successful companies already using our
+                        solutions to dominate their industry.</p>
+                    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                        <a href="contact.html"
+                            class="px-10 py-5 bg-white text-slate-900 rounded-2xl font-bold text-lg hover:bg-slate-100 transition shadow-xl">Get
+                            a Free Quote</a>
+                        <a href="services.html"
+                            class="px-10 py-5 border-2 border-white/20 text-white rounded-2xl font-bold text-lg hover:bg-white/5 transition">Explore
+                            Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 md:px-10 text-center mb-16 reveal">
+                <span class="text-indigo-600 font-bold uppercase tracking-widest text-sm">Latest News</span>
+                <h2 class="text-4xl font-bold text-slate-900 mt-4 font-['Outfit']">Insights & Innovation</h2>
+                <div class="w-20 h-1.5 bg-indigo-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 md:px-10 grid md:grid-cols-3 gap-8">
+                <!-- Blog 1 -->
+                <article
+                    class="reveal bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition group">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop"
+                            alt="AI Future"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center text-xs font-bold text-indigo-500 uppercase mb-4 tracking-widest">
+                            <span>Technology</span>
+                            <span class="mx-2">•</span>
+                            <span>Oct 12, 2025</span>
+                        </div>
+                        <h3
+                            class="text-xl font-bold text-slate-900 mb-4 group-hover:text-indigo-600 transition font-['Outfit'] leading-tight">
+                            The Future of AI in Enterprise Software</h3>
+                        <p class="text-slate-600 text-sm mb-6">How artificial intelligence is reshaping the way
+                            large-scale companies operate and deliver value...</p>
+                        <a href="blog.html" class="font-bold text-indigo-600 text-sm flex items-center">Read More <i
+                                class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog 2 -->
+                <article
+                    class="reveal bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition group">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop"
+                            alt="UIUX Trends"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center text-xs font-bold text-purple-500 uppercase mb-4 tracking-widest">
+                            <span>Design</span>
+                            <span class="mx-2">•</span>
+                            <span>Sep 28, 2025</span>
+                        </div>
+                        <h3
+                            class="text-xl font-bold text-slate-900 mb-4 group-hover:text-indigo-600 transition font-['Outfit'] leading-tight">
+                            UX Design Trends to Watch in 2026</h3>
+                        <p class="text-slate-600 text-sm mb-6">Explore the shift towards glassmorphism, accessibility,
+                            and high-quality motion design in modern interfaces...</p>
+                        <a href="blog.html" class="font-bold text-indigo-600 text-sm flex items-center">Read More <i
+                                class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog 3 -->
+                <article
+                    class="reveal bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition group">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop"
+                            alt="Cloud Solutions"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center text-xs font-bold text-blue-500 uppercase mb-4 tracking-widest">
+                            <span>Cloud</span>
+                            <span class="mx-2">•</span>
+                            <span>Sep 15, 2025</span>
+                        </div>
+                        <h3
+                            class="text-xl font-bold text-slate-900 mb-4 group-hover:text-indigo-600 transition font-['Outfit'] leading-tight">
+                            Scaling Modern Apps with Cloud Infrastructure</h3>
+                        <p class="text-slate-600 text-sm mb-6">Practical tips for developers to ensure their
+                            applications remain responsive under extreme user loads...</p>
+                        <a href="blog.html" class="font-bold text-indigo-600 text-sm flex items-center">Read More <i
+                                class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Form Section (Home Page) -->
+        <section id="contact" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 md:px-10">
+                <div class="grid md:grid-cols-2 gap-16 items-start">
+                    <div class="reveal">
+                        <span class="text-indigo-600 font-bold uppercase tracking-widest text-sm">Contact Us</span>
+                        <h2 class="text-4xl font-bold text-slate-900 mt-4 mb-6 font-['Outfit']">Let's Build Something
+                            Amazing Together</h2>
+                        <p class="text-slate-600 mb-10 leading-relaxed">Have a project in mind or just want to chat
+                            about tech? Drop us a message and our experts will get back to you within 24 hours.</p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-6">
+                                <div
+                                    class="w-14 h-14 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-600 text-xl">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">Headquarters</h4>
+                                    <p class="text-slate-500">123 Tech Avenue, Silicon Valley, CA</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-6">
+                                <div
+                                    class="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 text-xl">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">Call Us</h4>
+                                    <p class="text-slate-500">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-6">
+                                <div
+                                    class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-xl">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">Email Us</h4>
+                                    <p class="text-slate-500">hello@nexgenagency.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map Placeholder -->
+                        <div class="mt-10 rounded-3xl overflow-hidden grayscale opacity-70 border border-slate-100">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101408.2177292209!2d-122.151307!3d37.4137544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb6f866415951%3A0xedc9993309a67a0e!2sPalo%20Alto%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                    <div
+                        class="reveal bg-slate-50 p-8 md:p-12 rounded-[2.5rem] border border-slate-100 shadow-sm relative">
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-bold text-slate-700 mb-2">Full Name</label>
+                                    <input type="text"
+                                        class="w-full px-5 py-4 bg-white border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+                                        placeholder="John Doe" required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
+                                    <input type="email"
+                                        class="w-full px-5 py-4 bg-white border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+                                        placeholder="john@company.com" required>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Subject</label>
+                                <input type="text"
+                                    class="w-full px-5 py-4 bg-white border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+                                    placeholder="How can we help?" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Message</label>
+                                <textarea rows="4"
+                                    class="w-full px-5 py-4 bg-white border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+                                    placeholder="Tell us about your project..." required></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full py-5 btn-gradient text-white rounded-2xl font-bold text-lg shadow-xl shadow-indigo-200">Send
+                                Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 pt-20 pb-10 text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 md:px-10 grid md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-1">
+                <a href="index.html" class="flex items-center space-x-2 mb-8">
+                    <div class="w-10 h-10 btn-gradient rounded-xl flex items-center justify-center text-white text-xl">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight text-white font-['Outfit']">NexGen</span>
+                </a>
+                <p class="leading-relaxed mb-8">Building digital excellence through innovation and creative solutions
+                    since 2018.</p>
+                <div class="flex space-x-4">
+                    <a href="#"
+                        class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-indigo-600 hover:text-white transition"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-indigo-600 hover:text-white transition"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-indigo-600 hover:text-white transition"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#"
+                        class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center hover:bg-indigo-600 hover:text-white transition"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-8 font-['Outfit'] text-lg">Quick Links</h4>
+                <ul class="space-y-4">
+                    <li><a href="index.html" class="hover:text-indigo-400 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-indigo-400 transition">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-indigo-400 transition">Our Services</a></li>
+                    <li><a href="projects.html" class="hover:text-indigo-400 transition">Portfolio</a></li>
+                    <li><a href="blog.html" class="hover:text-indigo-400 transition">Latest News</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-8 font-['Outfit'] text-lg">Services</h4>
+                <ul class="space-y-4">
+                    <li><a href="#" class="hover:text-indigo-400 transition">Web Development</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition">Mobile Apps</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition">UI/UX Design</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition">AI & Automation</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition">Cloud Computing</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-8 font-['Outfit'] text-lg">Newsletter</h4>
+                <p class="mb-6">Stay updated with the latest tech trends and news.</p>
+                <form class="flex">
+                    <input type="email"
+                        class="w-full px-5 py-3 bg-white/5 border border-white/10 rounded-l-xl focus:outline-none focus:border-indigo-500 transition"
+                        placeholder="Email addr...">
+                    <button type="submit" class="px-5 py-3 btn-gradient text-white rounded-r-xl"><i
+                            class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 md:px-10 pt-10 border-t border-white/5 text-center text-sm">
+            <p>&copy; 2026 NexGen Tech Agency. All rights reserved. Designed with <i
+                    class="fas fa-heart text-rose-500"></i> by Antigravity.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
